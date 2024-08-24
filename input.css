@@ -7,7 +7,11 @@
 }
 .text-stroke {
   -webkit-text-stroke: 1px transparent;
+  transition: -webkit-text-stroke 300ms ease-in-out;
 }
 .text-stroke:hover {
+  -webkit-text-stroke-color: #494949;
+}
+.text-stroke:active {
   -webkit-text-stroke-color: #494949;
 }
