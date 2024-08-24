@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: "#ABEF5F",
         "primary-light": "rgba(171, 239, 95, 0.20)",
+        "primary-light-300": "rgba(171, 239, 95, 0.50)",
       },
       container: {
         center: true,
