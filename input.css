@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+.text-stroke {
+  -webkit-text-stroke: 1px transparent;
+}
+.text-stroke:hover {
+  -webkit-text-stroke-color: #494949;
+}
