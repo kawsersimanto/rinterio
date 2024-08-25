@@ -19,7 +19,11 @@ module.exports = {
           sm: "640px",
           lg: "768px",
           xl: "1024px",
+          "2xl": { min: "1025px", max: "1169px" },
         },
+      },
+      screens: {
+        "2xl": { min: "1025px", max: "1169px" },
       },
     },
   },
