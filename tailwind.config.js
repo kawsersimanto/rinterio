@@ -14,9 +14,9 @@ module.exports = {
           md: "2rem",
           DEFAULT: "1.25rem",
         },
-      },
-      screens: {
-        DEFAULT: "1170px",
+        screens: {
+          DEFAULT: "1170px",
+        },
       },
     },
   },
