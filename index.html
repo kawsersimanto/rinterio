@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Rinterio</title>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope scroll-smooth">
     <!-- navbar  -->
     <header class="lg:pt-[50px] md:pt-10 pt-8">
       <div class="container">
@@ -35,22 +35,21 @@
               >
             </li>
             <li>
-              <a href="#" class="text-neutral-500 text-stroke-transparent"
-                >Services</a
+              <a href="#about" class="text-neutral-500 text-stroke-transparent"
+                >About</a
               >
             </li>
             <li>
-              <a href="#" class="text-neutral-500 text-stroke-transparent"
+              <a
+                href="#portfolio"
+                class="text-neutral-500 text-stroke-transparent"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="#" class="text-neutral-500 text-stroke-transparent"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-neutral-500 text-stroke-transparent"
+              <a
+                href="#contact"
+                class="text-neutral-500 text-stroke-transparent"
                 >Contact Us</a
               >
             </li>
@@ -123,7 +122,7 @@
               </svg>
             </button>
             <a
-              href="#"
+              href="#contact"
               class="md:flex hidden items-center bg-primary py-3 px-5 rounded-[32px] font-extrabold gap-2 text-xl"
               >Book Consult
               <span class="bg-black p-[10px] rounded-[32px]">
@@ -237,7 +236,7 @@
     </main>
     <!-- banner  -->
     <!-- about -->
-    <section class="bg-[#F4F4F4]">
+    <section class="bg-[#F4F4F4]" id="about">
       <div class="lg:pt-[100px] md:pt-[72px] pt-8">
         <div class="container">
           <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-9 gap-6">
@@ -1148,7 +1147,10 @@
     </section>
     <!-- about -->
     <!-- Portfolio -->
-    <section class="lg:py-[100px] md:pt-[72px] pt-8 lg:bg-white bg-[#F4F4F4]">
+    <section
+      class="lg:py-[100px] md:pt-[72px] pt-8 lg:bg-white bg-[#F4F4F4]"
+      id="portfolio"
+    >
       <div class="container">
         <!-- section heading  -->
         <div class="flex flex-col items-center relative z-[1] lg:mb-8 mb-6">
@@ -1212,7 +1214,7 @@
                 </p>
                 <a
                   href="#"
-                  class="flex items-center font-extrabold gap-2 md:text-xl text-base"
+                  class="flex items-center font-extrabold gap-2 md:text-xl text-base transition-colors hover:text-primary duration-300 ease-in-out"
                   >View Details
                   <span
                     class="bg-primary p-[10px] rounded-[32px] w-8 h-8 flex items-center justify-center"
@@ -1282,7 +1284,7 @@
                 </p>
                 <a
                   href="#"
-                  class="flex items-center font-extrabold gap-2 md:text-xl text-base"
+                  class="flex items-center font-extrabold gap-2 md:text-xl text-base transition-colors hover:text-primary duration-300 ease-in-out"
                   >View Details
                   <span
                     class="bg-primary p-[10px] rounded-[32px] w-8 h-8 flex items-center justify-center"
@@ -1341,6 +1343,7 @@
     <!-- Portfolio -->
     <!-- contact  -->
     <section
+      id="contact"
       class="lg:py-[100px] md:py-[72px] py-[32px] bg-[url('../images/contact/bg-texture.png')] bg-cover bg-no-repeat bg-top md:border-[7px] border-[3px] border-white"
     >
       <div class="container">
@@ -1481,42 +1484,35 @@
           >
             <li>
               <a
-                href="#"
+                href="index.html"
                 class="text-base font-medium text-[#E9E9E9] transition-colors duration-300 ease-in-out hover:text-primary"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#services"
                 class="text-base font-medium text-[#E9E9E9] transition-colors duration-300 ease-in-out hover:text-primary"
                 >Services</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 class="text-base font-medium text-[#E9E9E9] transition-colors duration-300 ease-in-out hover:text-primary"
                 >Portfolio</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="text-base font-medium text-[#E9E9E9] transition-colors duration-300 ease-in-out hover:text-primary"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
+                href="#contact"
                 class="text-base font-medium text-[#E9E9E9] transition-colors duration-300 ease-in-out hover:text-primary"
                 >Contact Us</a
               >
             </li>
           </ul>
           <a
-            href="#"
+            href="#contact"
             class="flex items-center justify-center bg-primary py-3 px-5 rounded-[32px] font-extrabold gap-2 text-xl md:w-auto w-full"
             >Book Consult
             <span class="bg-black p-[10px] rounded-[32px]">

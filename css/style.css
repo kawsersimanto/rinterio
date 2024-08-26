@@ -622,12 +622,12 @@ video {
   z-index: 1;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .mx-auto {
@@ -691,10 +691,6 @@ video {
   height: 48px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -719,6 +715,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[241px\] {
+  max-width: 241px;
+}
+
 .max-w-\[320px\] {
   max-width: 320px;
 }
@@ -737,14 +737,6 @@ video {
 
 .max-w-\[970px\] {
   max-width: 970px;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[241px\] {
-  max-width: 241px;
 }
 
 .flex-shrink-0 {
@@ -801,6 +793,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -817,6 +813,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-9 {
   gap: 2.25rem;
 }
@@ -829,20 +829,12 @@ video {
   gap: 15px;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-\[120px\] {
-  gap: 120px;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -857,12 +849,12 @@ video {
   border-radius: 32px;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-\[64px\] {
   border-radius: 64px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -871,10 +863,6 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border-\[7px\] {
-  border-width: 7px;
 }
 
 .border-\[3px\] {
@@ -894,6 +882,11 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#1C1C1C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#77AAEA\] {
@@ -942,15 +935,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1C1C1C\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'images\/contact\/bg-texture\.png\'\)\] {
-  background-image: url('images/contact/bg-texture.png');
 }
 
 .bg-\[url\(\'\.\.\/images\/contact\/bg-texture\.png\'\)\] {
@@ -1016,14 +1000,9 @@ video {
   padding-bottom: 10px;
 }
 
-.py-\[72px\] {
-  padding-top: 72px;
-  padding-bottom: 72px;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
+.py-\[17px\] {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .py-\[32px\] {
@@ -1031,9 +1010,9 @@ video {
   padding-bottom: 32px;
 }
 
-.py-\[17px\] {
-  padding-top: 17px;
-  padding-bottom: 17px;
+.py-\[72px\] {
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .pb-\[40px\] {
@@ -1116,30 +1095,14 @@ video {
   color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
 .text-\[\#E9E9E9\] {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
 }
 
-.decoration-white {
-  text-decoration-color: #fff;
-}
-
-.decoration-solid {
-  text-decoration-style: solid;
-}
-
-.decoration-2 {
-  text-decoration-thickness: 2px;
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -1155,10 +1118,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
 }
 
 .ease-in-out {
@@ -1247,21 +1206,22 @@ video {
   content: var(--tw-content);
 }
 
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(171 239 95 / var(--tw-text-opacity));
 }
 
-.hover\:decoration-primary:hover {
-  text-decoration-color: #ABEF5F;
+.hover\:text-primary-light:hover {
+  color: rgba(171, 239, 95, 0.20);
 }
 
-.hover\:decoration-solid:hover {
-  text-decoration-style: solid;
-}
-
-.hover\:decoration-1:hover {
-  text-decoration-thickness: 1px;
+.hover\:text-primary-light-300:hover {
+  color: rgba(171, 239, 95, 0.50);
 }
 
 .hover\:before\:scale-100:hover::before {
@@ -1269,17 +1229,6 @@ video {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.focus-visible\:border-primary:focus-visible {
-  --tw-border-opacity: 1;
-  border-color: rgb(171 239 95 / var(--tw-border-opacity));
-}
-
-.focus-visible\:ring-1:focus-visible {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .focus-visible\:ring-2:focus-visible {
@@ -1297,23 +1246,17 @@ video {
   --tw-ring-offset-width: 2px;
 }
 
-@media (min-width: 640px) {
-  .sm\:w-full {
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
   .md\:col-span-8 {
     grid-column: span 8 / span 8;
-  }
-
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
   }
 
   .md\:mt-6 {
@@ -1332,10 +1275,6 @@ video {
     width: auto;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:max-w-\[260px\] {
     max-width: 260px;
   }
@@ -1350,10 +1289,6 @@ video {
 
   .md\:max-w-\[654px\] {
     max-width: 654px;
-  }
-
-  .md\:max-w-\[\] {
-    max-width: ;
   }
 
   .md\:max-w-\[678px\] {
@@ -1386,10 +1321,6 @@ video {
 
   .md\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .md\:gap-\[120px\] {
-    gap: 120px;
   }
 
   .md\:gap-\[100px\] {
@@ -1530,10 +1461,6 @@ video {
     max-width: 972px;
   }
 
-  .lg\:max-w-\[678px\] {
-    max-width: 678px;
-  }
-
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1634,10 +1561,6 @@ video {
 }
 
 @media (min-width: 1025px) and (max-width: 1169px) {
-  .\32xl\:max-w-\[\] {
-    max-width: ;
-  }
-
   .\32xl\:max-w-\[200px\] {
     max-width: 200px;
   }
